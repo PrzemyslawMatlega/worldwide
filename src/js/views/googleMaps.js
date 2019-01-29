@@ -1,4 +1,4 @@
-import { DH_NOT_SUITABLE_GENERATOR } from "constants";
+
 
 export function initMap(address) {
   let map = new google.maps.Map(document.getElementById('map'), {
