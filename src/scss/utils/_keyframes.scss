@@ -36,3 +36,14 @@
       transform: rotate(0); }
     100% {
       transform: rotate(360deg); } }
+
+      
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

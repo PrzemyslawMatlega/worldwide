@@ -5,10 +5,25 @@
     z-index: 5;
     position: absolute;
 
+    
+
+
     @if $mid {
+        height: 30%;
+        width: 5rem;
         top: 50%;
         transform: translateY(-50%);
         font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $bp-L)
+        {
+            justify-content: flex-end;
+            height: 50%;
+            width: 7rem;
+        }
     }
 
     @else {
@@ -16,6 +31,9 @@
         right: 1rem;
         font-size: 7rem;
         line-height: 1;
+        display: flex;
+        justify-content: flex-end;
+        width: 8rem;
     }
 }
 

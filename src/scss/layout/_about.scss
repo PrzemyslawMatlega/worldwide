@@ -7,7 +7,7 @@
     margin: 10vh 0vh;
 
     @media (max-width: $bp-M) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: max-content 1fr;
         grid-row-gap: 5vh;
         margin: 5vw 0vh;
@@ -22,18 +22,12 @@
     &__big {
      
         margin-right: 5vw;
-        
-        // @media (max-width: $bp-XL) {
-        //     font-size: 2.7rem;
-        //     margin-right: 2vw;
-        // }
-        // @media (max-width: $bp-M) {
-        //     font-size: 2.5rem;
-        //     margin-right: 0vw;
-        // }
-        // @media (max-width: $bp-XS) {
-        //     font-size: 2.3rem;
-        // }
+        width: 100%;
+   
+        @media (max-width: $bp-XS) {
+            margin-right: 0;
+            text-align: center;
+        }
 
 
     }

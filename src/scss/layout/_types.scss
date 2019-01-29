@@ -10,6 +10,10 @@
         }
     &__info{
         margin-bottom: 5vh;
+
+        @media (max-width: $bp-M){
+            text-align: center;
+        }
        
     }
 }

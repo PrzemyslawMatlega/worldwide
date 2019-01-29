@@ -1,4 +1,3 @@
-
 .popup {
 
     position: fixed;
@@ -20,9 +19,17 @@
     height: 90%;
     position: relative;
 
+    @media (max-width: $bp-L) {
+        height: 100%;
+    }
+
     &__prev {
         @include sliderNav(true);
-       left: 2rem;
+        left: 2rem;
+
+        @media (max-width: $bp-L) {
+            justify-content: flex-start
+        }
     }
 
     &__next {
@@ -31,7 +38,7 @@
     }
 
     &__close {
-      
+
         @include sliderNav(false);
 
     }
@@ -65,15 +72,4 @@
 
     animation-name: fade;
     animation-duration: 0.5s;
-}
-
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
 }

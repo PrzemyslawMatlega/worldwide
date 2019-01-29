@@ -13,8 +13,8 @@
         grid-row-gap: 3rem;
         margin-bottom: 5vh;
     }
-    @media (max-width: $bp-M) and (portrait: landscape) {
-        grid-template-rows: 1fr 60vh;
+    @media (max-width: $bp-S) and (portrait: landscape) {
+        grid-template-rows: 60vh 40vh;
     }
 
 }
@@ -46,8 +46,7 @@
             line-height: 2;
             font-size: 2rem;
             cursor: pointer;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.199)
-
+            border-bottom: 1px solid rgba(0, 0, 0, 0.199);
         }
 
         & :nth-child(even) {
