@@ -15,7 +15,7 @@ export default class Autocomplete {
       ['Sydney',[-33.865,151.209]],
       ['Berlin',[52.506,13.144]],
       ['Munich',[48.155,11.401]],
-      ['Shanghai',[31.224,120.916]]
+      ['Shanghai',[31.224,]]
 
     ]),
       this.matches = matches,

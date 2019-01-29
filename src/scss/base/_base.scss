@@ -101,8 +101,22 @@ html {
 
 }
 
-.titleBig{
+.titleBig {
     font-family: $font-three;
     font-size: 3.5rem;
     font-weight: bold;
+}
+
+
+.loader {
+    margin: 5rem auto;
+    text-align: center;
+
+    &> svg {
+        height: 5.5rem;
+        width: 5.5rem;
+        fill: #F59A83;
+        transform-origin: 44% 50%;
+        animation: rotate 1.5s infinite linear;
+    }
 }

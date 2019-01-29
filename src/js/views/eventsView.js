@@ -16,16 +16,25 @@ const renderEv = (title, start) =>{
 };
 
 export const eventsClean = () =>{
-    elements.places.style.display = 'grid';
     elements.placesList.innerHTML ='';
     elements.eventsMain.innerHTML =''; 
 }
 
 
 export const renderEvents = (events) =>{
-    elements.events.style.display='grid';
     events.forEach(el => {
    
         renderEv(el.title,el.start);
     })
+}
+
+export const eventsShow =() => {
+    elements.events.style.display='grid';
+    elements.places.style.display='grid';
+}
+
+export const eventsCleanSearch= ()=>{
+    elements.places.style.display='none';
+    elements.events.style.display='none';
+
 }

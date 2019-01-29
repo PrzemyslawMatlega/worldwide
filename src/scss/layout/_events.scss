@@ -22,12 +22,12 @@
             display: grid;
       
             grid-template-columns: repeat(2, 49%);
-            grid-template-rows:repeat(5, 1fr);
+      
    
         
             @media (max-width: $bp-XS) {
                 grid-template-columns: repeat(1, 99%);
-                grid-template-rows:repeat(10, 1fr);
+               
         
             }
     }

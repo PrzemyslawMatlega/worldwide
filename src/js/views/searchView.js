@@ -48,3 +48,9 @@ export const rmvStatus= () =>{
   } )
 
 }
+
+export const showSearch =() =>{
+  elements.photos.style.display = 'grid';
+  elements.info.style.display = 'grid';
+  elements.types.style.display='block';
+}

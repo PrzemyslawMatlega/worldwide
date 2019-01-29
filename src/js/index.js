@@ -1,6 +1,6 @@
 import { initMap } from './views/googleMaps';
 import {initPlaces} from'./views/googlePlaces';
-import {elements} from './views/base';
+import {elements,renderLoader,clearLoader} from './views/base';
 import Search from './models/Search';
 import Slider from './models/Slider';
 import Autocomplete from './models/Autocomplete';
@@ -25,24 +25,20 @@ const ctrlSearch = async (city) => {
   state.search = new Search(city);
   state.slider = new Slider();
 
-  setTimeout(() => {
-    window.scrollBy(0, 500);
-  }, 500);
-
   try {
+    searchView.showSearch();
+    eventsView.eventsCleanSearch(); 
+    renderLoader(elements.info);
     await state.search.searchImgCity();
+    await state.search.searchWiki();
+    clearLoader();
     searchView.renderPhoto(state.search.photos);
 
-    await state.search.searchWiki();
     searchView.renderWiki(state.search.wiki);
 
     sliderView.renderSlider();
     initMap(city);
 
-    elements.photos.style.display = 'grid';
-    elements.info.style.display = 'grid';
-    elements.types.style.display='block';
-    
     
   } catch (err) { 
     console.log(err);
@@ -199,7 +195,10 @@ const ctrlPlaces = async () => {
     initPlaces(location,state.status);
     state.events = new Events(location);
   try{
+    eventsView.eventsShow();
+    renderLoader(elements.eventsMain);
     await state.events.eventSearch(eventsTypes(state.status))
+    clearLoader();
     eventsView.renderEvents(state.events.events)
     
   }
