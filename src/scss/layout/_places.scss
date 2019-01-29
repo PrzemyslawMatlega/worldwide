@@ -1,0 +1,99 @@
+.places {
+    grid-column: full-start/full-end;
+    display: none;
+    margin: 5vh 0vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60vh;
+    grid-column-gap: 2rem;
+
+    @media (max-width: $bp-M) {
+        grid-template-columns: 1fr;
+        height: 100%;
+        grid-template-rows: 50vh 30vh;
+        grid-row-gap: 3rem;
+        margin-bottom: 5vh;
+    }
+    @media (max-width: $bp-M) and (portrait: landscape) {
+        grid-template-rows: 1fr 60vh;
+    }
+
+}
+
+#places__map {
+    height: 100%;
+    width: 100%;
+    @media (max-width: $bp-M) {
+        grid-row: 1/2;
+
+    }
+}
+
+
+.mapInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &__places {
+        overflow-y: scroll;
+
+        &>li {
+            width: 100%;
+            text-align: center;
+            list-style: none;
+            font-family: $font-two;
+            line-height: 2;
+            font-size: 2rem;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.199)
+
+        }
+
+        & :nth-child(even) {
+            background-color: rgba(160, 160, 160, 0.103);
+        }
+
+    }
+
+    &__more {
+        line-height: 200%;
+        font-size: 2rem;
+        font-family: $font-two;
+        position: relative;
+        cursor: pointer;
+        font-weight: bold;
+        transition: .2s all ease-in;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        backface-visibility: hidden;
+
+        &::after {
+            content: '';
+            transition: .4s all ease;
+        }
+
+        &:hover {
+            transform: translateY(-10%);
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 110%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: black;
+
+
+            }
+        }
+
+        &:active {
+            transform: translateY(0%);
+        }
+
+    }
+}

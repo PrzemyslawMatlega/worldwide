@@ -1,0 +1,79 @@
+
+.popup {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+
+}
+
+.slider {
+    background-color: black;
+    width: 100%;
+    height: 90%;
+    position: relative;
+
+    &__prev {
+        @include sliderNav(true);
+       left: 2rem;
+    }
+
+    &__next {
+        @include sliderNav(true);
+        right: 2rem;
+    }
+
+    &__close {
+      
+        @include sliderNav(false);
+
+    }
+
+    &__element {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        &-active {
+            opacity: 1;
+            z-index: 1;
+
+        }
+    }
+
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+
+.fade {
+
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

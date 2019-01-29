@@ -1,0 +1,32 @@
+@keyframes borderDown {
+    0% {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    100% {
+        border-top: 1px solid rgba(0, 0, 0, 0);
+        border-right: 1px solid rgba(0, 0, 0, 0);
+        border-left: 1px solid rgba(0, 0, 0, 0);
+        border-bottom: 1px solid black;
+    }
+}
+
+@keyframes borderUp {
+    0% {
+     
+        border-top: 1px solid rgba(0, 0, 0, 0);
+        border-right: 1px solid rgba(0, 0, 0, 0);
+        border-left: 1px solid rgba(0, 0, 0, 0);
+        border-bottom: 1px solid black;
+    }
+
+    100% {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+}

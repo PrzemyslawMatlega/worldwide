@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree|Merienda|Philosopher" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>WordWide</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <div class="header__logo">
+                WorldWide
+                <svg class="header__logo-icon">
+                    <use xlink:href="img/sprite.svg#airplane-travelling-around-earth"></use>
+                </svg>
+            </div>
+
+            <div class="header__user">
+                <a href="#search">
+                    <svg class="header__user-icon">
+                        <use xlink:href="img/sprite.svg#location-pin"></use>
+                    </svg>
+
+                </a>
+             
+
+            </div>
+
+            <div class="header__text">
+               <div class="header__text-main"> <p>adventurous is</p></div>
+                <div class="header__textbox">
+                    <span class="header__text-visible">worthwhile</span>
+                    <span class="header__text-invisible">
+                        WorldWide
+                        <svg class="header__text-logo">
+                            <use xlink:href="img/sprite.svg#airplane-travelling-around-earth"></use>
+                        </svg>
+                    </span>
+
+                </div>
+
+            </div>
+        </header>
+
+
+        <section class="about">
+
+            <div class="about__big titleBig">
+                <p>don't listen to what they say.</br>go see.</p>
+            </div>
+
+            <div class="about__right">
+                <div class="about__right-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt in temporibus doloremque quod voluptatum dignissimos! Asperiores modi, porro accusantium quidem, ab sunt eius nulla temporibus quam laudantium iure animi? Eaque quam molestias vero quisquam veritatis aliquam fuga reprehenderit minus qui, repellendus deserunt accusamus amet possimus non animi natus voluptatem ipsa nemo, maiores cupiditate, accusantium culpa?
+                </div>
+                <div class="about__right-more">
+                    <div class="about__right-more__text">Read more</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="best">
+
+            <div class="best__photo-1"></div>
+            <div class="best__photo-2" data-aos="fade-right" data-aos-duration="1900">
+                <img src="/img/travel.jpg" alt="" class="best__img">
+            </div>
+
+
+            <div class="tours">
+                <h2 class="tours__text titleBig">most picked.</h2>
+
+                <div class="tours__box tours__box--1" data-aos="fade-up" data-aos-duration="800">
+                    <div class="tours__box-picked tours__box-picked--1">Paris</div>
+                </div>
+                <div class="tours__box tours__box--2" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="tours__box-picked tours__box-picked--2">Dubai</div>
+                </div>
+                <div class="tours__box tours__box--3" data-aos="fade-up" data-aos-duration="1600">
+                    <div class="tours__box-picked tours__box-picked--3">Tokyo</div>
+                </div>
+                <div class="tours__box tours__box--4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="tours__box-picked tours__box-picked--4">Barcelona</div>
+                </div>
+                
+                
+
+            </div>
+
+        </section>
+
+        <section class="search" id="search">
+
+            <form action="#" class="search-form">
+                <input type="text" class="search-form__input" id="address" placeholder="Search for place" autocomplete="off">
+                <button class="search-form__button" id="submit" value="x">
+                    <svg class="search-form__button-icon">
+                        <use xlink:href="img/Search.svg#Capa_1" />
+                    </svg>
+                </button>
+            </form>
+
+            <div class="search__list">
+                <ul class="search-results"></ul>
+            </div>
+
+        </section>
+
+        <section class="info">
+            <div id="map"></div>
+            <div class="cityInfo"></div>
+        </section>
+
+        <section class="photos">
+
+        </section>
+
+        <div class="popup">
+            <div class="slider">
+                <div class="slider__prev ">&#10094;</div>
+                <span class="slider__close">&times;</span>
+                <div class="slider__next">&#10095;</div>
+                <div class="slider__photos"></div>
+            </div>
+
+        </div>
+
+        <section class="types">
+
+            <div class="types__info titleBig">select your travel style.</div>
+
+            <div class="card">
+                <div data-type="party" class="card__element card__element--party">
+                    <div data-type="party"class="card__element-text">Party</div>
+                    <svg data-type="party" class="card__element-icon">
+                        <use xlink:href="img/Sprite2.svg#cocktail" />
+                    </svg>
+                </div>
+
+                <div data-type="shopping" class="card__element card__element--shopping">
+                    <div data-type="shopping" class="card__element-text">Shopping</div>
+                    <svg data-type="shopping" class="card__element-icon">
+                        <use xlink:href="img/Sprite2.svg#shopping-bag" />
+                    </svg>
+                </div>
+
+                <div data-type="culture" class="card__element card__element--culture">
+                    <div data-type="culture" class="card__element-text">Culture</div>
+                    <svg data-type="culture" class="card__element-icon">
+                        <use xlink:href="img/Sprite2.svg#eiffel-tower" />
+                    </svg>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="places">
+
+            
+            <div class="mapInfo">
+                <ul class="mapInfo__places"></ul>
+                <div class="mapInfo__more"> Show More</div>
+            </div>
+            <div id="places__map"></div>
+
+        </section>
+
+        <section class="events">
+            <div class="events__title titleBig">top events.</div>
+            <div class="events__main"></div>
+        </section>
+
+
+
+        <script src="js/script.min.js" defer></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0TocXKDBv5gGNnjqS0VhBDyZg_n3TsMo&libraries=places&callback" async defer></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+</body>
+
+</html>

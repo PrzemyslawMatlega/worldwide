@@ -1,0 +1,48 @@
+@mixin sliderNav($mid) {
+
+    cursor: pointer;
+    color: white;
+    z-index: 5;
+    position: absolute;
+
+    @if $mid {
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 5rem;
+    }
+
+    @else {
+        top: 0;
+        right: 1rem;
+        font-size: 7rem;
+        line-height: 1;
+    }
+}
+
+@mixin mostPicked($pos, $url) {
+
+    transition: all 0.2s ease-in;
+    background-position: $pos center;
+
+    @media (max-width: $bp-M) {
+        background-image: url($url);
+        background-size: cover;
+        color: white;
+        &:hover :active {
+           
+            color: white;
+    
+        }
+
+    }
+
+    &:hover {
+        background-image: url($url);
+        background-size: cover;
+        color: transparent;
+
+    }
+
+
+}
+

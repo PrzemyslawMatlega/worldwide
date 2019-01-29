@@ -1,0 +1,101 @@
+.about {
+    grid-column: center-start/center-end;
+    display: grid;
+    grid-template-columns: minmax(max-content, 1fr) 1fr;
+    align-items: flex-start;
+
+    margin: 10vh 0vh;
+
+    @media (max-width: $bp-M) {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        grid-row-gap: 5vh;
+        margin: 5vw 0vh;
+    }
+
+    @media (max-width: $bp-XS) {
+        grid-column: full-start/full-end;
+        justify-items: center;
+        grid-row-gap: 5vh;
+    }
+
+    &__big {
+     
+        margin-right: 5vw;
+        
+        // @media (max-width: $bp-XL) {
+        //     font-size: 2.7rem;
+        //     margin-right: 2vw;
+        // }
+        // @media (max-width: $bp-M) {
+        //     font-size: 2.5rem;
+        //     margin-right: 0vw;
+        // }
+        // @media (max-width: $bp-XS) {
+        //     font-size: 2.3rem;
+        // }
+
+
+    }
+
+
+    &__right {
+        line-height: 160%;
+        font-size: 2rem;
+        font-family: $font-two;
+
+        @media (max-width: $bp-M) {
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: $bp-XS) {
+            margin: 0rem 3rem;
+            font-size: 2rem;
+        }
+      
+
+        &-more {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            font-weight: bold;
+            transition: .2s all ease-in;
+
+            &::after {
+                content: '';
+                transition: .4s all ease;
+            }
+
+            &__text {
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid black;
+            }
+
+            &:hover {
+                transform: translateY(-10%);
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 110%;
+                    left: 50;
+                    width: 100%;
+                    height: 1px;
+                    background-color: black;
+
+
+                }
+            }
+
+            &:active {
+                transform: translateY(0%);
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,102 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    &__element {
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        width: 30%;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.4s all ease-out;
+
+
+        @media (max-width: $bp-M) {
+            height: 20rem;
+            width: 30%;
+        }
+
+        @media (max-width: $bp-S) {
+            height: 18rem;
+
+        }
+
+
+        &-icon {
+            width: 7rem;
+            height: 7rem;
+
+
+            @media (max-width: $bp-M) {
+                width: 5rem;
+                height: 5rem;
+
+            }
+        }
+
+        &-text {
+            font-size: 3rem;
+            font-family: $font-one;
+            letter-spacing: 1px;
+            margin-bottom: 10%;
+
+
+            @media (max-width: $bp-XS) {
+                font-size: 2.5rem;
+
+            }
+        }
+
+        // &--party {
+            
+        //     &:hover {
+
+        //         background: linear-gradient(to bottom, #3493e62f, #ec6ead2c);
+        //     }
+        // }
+
+        // &--shopping {
+        //     &:hover {
+        //         background: linear-gradient(to bottom, #e7e7c657, #1cf0ff3a);
+        //     }
+        // }
+
+        // &--culture {
+
+
+        //     &:hover {
+        //         background: linear-gradient(to bottom, #f3e6ff, #ffcac175);
+        //     }
+        // }
+
+
+    }
+}
+
+
+.active--party {
+    border: 1px solid black;
+    animation-name: borderUp;
+    animation-duration: 0.6s;
+    // background: linear-gradient(to bottom, #3493e62f, #ec6ead2c);
+    transform: translateY(0.5rem)
+}
+
+.active--shopping {
+    border: 1px solid black;
+    animation-name: borderUp;
+    animation-duration: 0.6s;
+    // background: linear-gradient(to bottom, #e7e7c657, #1cf0ff3a);
+    transform: translateY(0.5rem)
+}
+
+.active--culture {
+    // background: linear-gradient(to bottom, #f3e6ff, #ffcac175);
+    border: 1px solid black;
+    animation-name: borderUp;
+    animation-duration: 0.6s;
+    transform: translateY(0.5rem)
+}
