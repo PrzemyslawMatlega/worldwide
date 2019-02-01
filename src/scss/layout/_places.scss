@@ -13,9 +13,7 @@
         grid-row-gap: 3rem;
         margin-bottom: 5vh;
     }
-    @media (max-width: $bp-S) and (portrait: landscape) {
-        grid-template-rows: 60vh 40vh;
-    }
+
 
 }
 
