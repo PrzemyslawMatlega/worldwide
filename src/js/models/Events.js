@@ -10,7 +10,7 @@ export default class Events {
             let client = new phq.Client({
                 access_token: "r0LENp7aLSwFnzB1hASYm28n6qiB1l"
             })
-
+            
             let result = await client.events.search({
                 'within': `10km@${this.loc[0]},${this.loc[1]}`,
                 'category': `${category}`

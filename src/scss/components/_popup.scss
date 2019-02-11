@@ -11,6 +11,7 @@
     display: none;
     align-items: center;
 
+    
 }
 
 .slider {
@@ -64,6 +65,10 @@
         height: 100%;
         display: block;
         object-fit: contain;
+    }
+
+    &>*{
+        user-select: none;
     }
 }
 

@@ -1,6 +1,7 @@
 import { elements } from './base';
 
 export const moveCursor = (pos) => {
+  
   for (const el of elements.results.children) {
     el.classList.remove('highlighted');
   }

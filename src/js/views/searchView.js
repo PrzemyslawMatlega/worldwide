@@ -10,7 +10,7 @@ const renderImg = (photos, i) => {
 export const clean = () => {
   elements.photos.innerHTML = '';
   elements.cityInfo.innerHTML = '';
-  elements.places.style.display='none';
+  elements.places.style.display = 'none';
 };
 
 const renderInfo = (wiki) => {
@@ -39,18 +39,16 @@ export const renderWiki = (wiki) => {
   renderInfo(wiki.slice(0, lastDot));
 };
 
-export const rmvStatus= () =>{
-  let cards = document.querySelectorAll('.card__element');
-  cards.forEach((el) =>{
-     const rmvClass=  el.classList[2];
-     el.classList.remove(`${rmvClass}`);
+export const rmvStatus = () => {
+  const cards = document.querySelectorAll('.card__element');
+  cards.forEach((el) => {
+    const rmvClass = el.classList[2];
+    el.classList.remove(`${rmvClass}`);
+  });
+};
 
-  } )
-
-}
-
-export const showSearch =() =>{
+export const showSearch = () => {
   elements.photos.style.display = 'grid';
   elements.info.style.display = 'grid';
-  elements.types.style.display='block';
-}
+  elements.types.style.display = 'block';
+};

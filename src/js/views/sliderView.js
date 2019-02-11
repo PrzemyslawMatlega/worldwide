@@ -1,6 +1,6 @@
 import { state } from '../index';
-import { elements } from './base'
-;
+import { elements } from './base';
+
 export function renderSlider() {
   state.search.photos.forEach((el) => {
     const markup = `

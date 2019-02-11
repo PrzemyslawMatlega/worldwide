@@ -181,10 +181,10 @@ const eventsTypes = (status)=>{
     return 'concerts, festivals'
 
     case "shopping_mall":
-    return 'xd'
-
+    return 'performing-arts'
+    
     case "museum":
-    return "expos,performing-arts";
+    return "expos";
 
   }
 }
