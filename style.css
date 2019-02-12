@@ -146,7 +146,7 @@ html {
     grid-column: 3/4;
     display: flex;
     justify-content: flex-end;
-    margin: 0 2rem;
+    margin: 0 2.1rem;
     cursor: pointer; }
     .header__user-icon {
       width: 3rem;
