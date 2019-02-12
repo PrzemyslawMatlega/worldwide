@@ -267,7 +267,8 @@ html {
   .about__right {
     line-height: 160%;
     font-size: 2rem;
-    font-family: "Bai Jamjuree", sans-serif; }
+    font-family: "Bai Jamjuree", sans-serif; 
+    text-align: justify;}
     @media (max-width: 56.25em) {
       .about__right {
         font-size: 1.4rem; } }

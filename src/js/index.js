@@ -31,10 +31,9 @@ const ctrlSearch = async (city) => {
     renderLoader(elements.info);
     await state.search.searchImgCity();
     await state.search.searchWiki();
-    clearLoader();
     searchView.renderPhoto(state.search.photos);
-
     searchView.renderWiki(state.search.wiki);
+    clearLoader();
 
     sliderView.renderSlider();
     initMap(city);

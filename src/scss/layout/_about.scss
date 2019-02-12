@@ -37,6 +37,7 @@
         line-height: 160%;
         font-size: 2rem;
         font-family: $font-two;
+        text-align: justify;
 
         @media (max-width: $bp-M) {
             font-size: 1.4rem;

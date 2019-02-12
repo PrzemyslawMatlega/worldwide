@@ -9,7 +9,7 @@
     @media (max-width: $bp-M) {
         grid-template-columns: 1fr;
         height: 100%;
-        grid-template-rows: 50vh 30vh;
+        grid-template-rows: 50vh 40vh;
         grid-row-gap: 3rem;
         margin-bottom: 5vh;
     }
@@ -45,6 +45,9 @@
             font-size: 2rem;
             cursor: pointer;
             border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+            @media (max-width: $bp-M) {
+                font-size: 1.5rem;
+            }
         }
 
         & :nth-child(even) {

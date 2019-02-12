@@ -32,7 +32,6 @@ export const renderLoader = (parent) => {
             </svg>
         </div>
     `;
-  window.scrollBy(0, 500);
   parent.insertAdjacentHTML('afterbegin', loader);
 };
 
