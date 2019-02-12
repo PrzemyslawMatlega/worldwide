@@ -103,7 +103,7 @@ html {
   display: grid;
   grid-template-columns: minmax(min-content, 20rem) minmax(min-content, 1fr) minmax(min-content, 20rem);
   grid-template-rows: max-content 40vh;
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.192) 75%, rgba(0, 0, 0, 0.377) 100%), url(/img/bgtop2.jpg);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.192) 75%, rgba(0, 0, 0, 0.377) 100%), url(img/bgtop2.jpg);
   background-size: cover;
   background-position: left center;
   align-items: center;
@@ -111,10 +111,10 @@ html {
   color: white; }
   @media (max-width: 64em) {
     .header {
-      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.192) 75%, rgba(0, 0, 0, 0.377) 100%), url(/img/bg-medium.jpg); } }
+      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.192) 75%, rgba(0, 0, 0, 0.377) 100%), url(img/bg-medium.jpg); } }
   @media (max-width: 30em) {
     .header {
-      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.192) 75%, rgba(0, 0, 0, 0.377) 100%), url(/img/bg-min.jpg);
+      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.192) 75%, rgba(0, 0, 0, 0.377) 100%), url(img/bg-min.jpg);
       grid-template-rows: max-content 30vh; } }
   .header__logo {
     padding: 2rem 0rem;
@@ -504,13 +504,13 @@ html {
       background-position: top center; }
       @media (max-width: 56.25em) {
         .tours__box-picked--1 {
-          background-image: url("/img/paris.jpeg");
+          background-image: url("img/paris.jpeg");
           background-size: cover;
           color: white; }
           .tours__box-picked--1:hover :active {
             color: white; } }
       .tours__box-picked--1:hover {
-        background-image: url("/img/paris.jpeg");
+        background-image: url("img/paris.jpeg");
         background-size: cover;
         color: transparent; }
     .tours__box-picked--2 {
@@ -518,13 +518,13 @@ html {
       background-position: center center; }
       @media (max-width: 56.25em) {
         .tours__box-picked--2 {
-          background-image: url("/img/dubai.jpg");
+          background-image: url("img/dubai.jpg");
           background-size: cover;
           color: white; }
           .tours__box-picked--2:hover :active {
             color: white; } }
       .tours__box-picked--2:hover {
-        background-image: url("/img/dubai.jpg");
+        background-image: url("img/dubai.jpg");
         background-size: cover;
         color: transparent; }
     .tours__box-picked--3 {
@@ -532,13 +532,13 @@ html {
       background-position: center center; }
       @media (max-width: 56.25em) {
         .tours__box-picked--3 {
-          background-image: url("/img/tokyo.jpg");
+          background-image: url("img/tokyo.jpg");
           background-size: cover;
           color: white; }
           .tours__box-picked--3:hover :active {
             color: white; } }
       .tours__box-picked--3:hover {
-        background-image: url("/img/tokyo.jpg");
+        background-image: url("img/tokyo.jpg");
         background-size: cover;
         color: transparent; }
     .tours__box-picked--4 {
@@ -546,13 +546,13 @@ html {
       background-position: top center; }
       @media (max-width: 56.25em) {
         .tours__box-picked--4 {
-          background-image: url("/img/barcelona.jpg");
+          background-image: url("img/barcelona.jpg");
           background-size: cover;
           color: white; }
           .tours__box-picked--4:hover :active {
             color: white; } }
       .tours__box-picked--4:hover {
-        background-image: url("/img/barcelona.jpg");
+        background-image: url("img/barcelona.jpg");
         background-size: cover;
         color: transparent; }
 
